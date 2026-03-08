@@ -1,0 +1,182 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>HappyToys Shop</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+   <style> 
+      
+
+       body {
+           margin: 0;
+           font-family: 'Merriweather', serif;
+           background: linear-gradient(-45deg, #ffd6e8, #e6f7ff, #fff0c2, #ffe6f7);
+           background-size: 400% 400%;
+          animation: gradientMove 12s ease infinite;
+        
+        }
+
+        header {
+            background: linear-gradient(to right, #ff6fb5, #ffb86c);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            animation: fadeInDown 1.2s ease-in-out;
+     
+      }
+      nav a:hover {
+        color: #ff8c42;
+        transform: scale(1.1);
+      }
+
+     .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px;
+   
+     }
+
+     .card {
+     background: white;
+     width: 260px;
+     margin: 20px;
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+     text-align: center;
+     transition: transform 0.4s ease, box-shadow 0.4s ease;
+     animation: floatUp 1s ease forwards;
+     opacity: 0;
+
+     }
+     .card:nth-child(1) { animation-delay: 0.3s; }
+     .card:nth-child(2) { animation-delay: 0.6s; }
+     .card:nth-child(3) { animation-delay: 0.9s; }
+     .card:hover {
+         transform: translateY(-12px) scale(1.05);
+         box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+ 
+     }
+
+     .card img {
+         width: 100%;
+         border-radius: 15px;
+         transition: transform 0.4s ease;
+ 
+     }
+
+     .card:hover img {
+         transform: scale(1.05);
+
+     }
+
+     .card h3 {
+         color: #ff4fa3;
+         margin-top: 15px;
+ 
+     }
+
+     .card button {
+         background: linear-gradient(to right, #ff6fb5, #ff8c42);
+         color: white;
+         border: none;
+         padding: 12px 18px;
+         border-radius: 12px;
+         cursor: pointer;
+         font-weight: 700;
+          margin-top: 10px;
+         transition: 0.3s ease;
+
+     }
+
+     .card button:hover {
+         transform: scale(1.15);
+         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+     }
+
+     footer {
+         background: linear-gradient(to right, #ff6fb5, #ffb86c);
+         color: white;
+         text-align: center;
+         padding: 25px;
+         margin-top: 40px;
+        animation: fadeIn 2s ease-in;
+
+     }
+    
+     @keyframes floatUp {
+         from { transform: translateY(30px); opacity: 0; }
+         to { transform: translateY(0); opacity: 1; }
+
+     }
+
+     @keyframes fadeInDown {
+        from { transform: translateY(-30px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+
+     }
+
+     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+     @keyframes gradientMove {
+         0% { background-position: 0% 50%; }
+         50% { background-position: 100% 50%; }
+         100% { background-position: 0% 50%; }
+
+     }
+     </style>
+     </head>
+     <body>
+
+     <header>
+         <h1>🎀 HappyToys Shop 🎀</h1>
+          <p>Bringing Joy to Every Child</p>
+     </header>
+
+     <nav>
+         <a href="#">Home</a>
+         <a href="#">Shop</a>
+         <a href="#">About</a>
+         <a href="#">Contact</a>
+        </nav>
+    </div>
+    </header>
+
+     <div class="container">
+
+          <div class="card">
+               <img src="https://i5.walmartimages.com/seo/LotFancy-12-in-Brown-Teddy-Bear-Stuffed-Animal-Plush-Toy_a066898a-c4a6-4019-a3c8-1e13f2c9dc39.f9d13303c3d99fa4ab6a31262cf1a07f.jpeg" alt="Teddy Bear">
+               <h3>Teddy Bear</h3>
+               <p>Soft and cuddly teddy bear.</p>
+               <p><strong>₱825.00</strong></p>
+               <button>Add to Cart</button>
+          </div>
+
+     <div class="card">
+         <img src="https://th.bing.com/th/id/R.28818e734a716c6fcccaf3d63bda41a0?rik=vZ58s6ZP6lsqKA&riu=http%3a%2f%2fazimporter.com%2fmedia%2fcatalog%2fproduct%2fcache%2f1%2fimage%2f1800x%2f040ec09b1e35df139433887a97daa66f%2fp%2fs%2fps182-03.jpg&ehk=q3o6m6oclKp%2f5suyi1hXZIEEQOeg6dbQHN%2bUx0wxYjo%3d&risl=&pid=ImgRaw&r=0" alt="Toy Car">
+         <h3>Racing Car</h3>
+         <p>Fast and fun toy car.</p>
+         <p><strong>₱550.00</strong></p>
+         <button>Add to Cart</button>
+     </div>
+
+     <div class="card">
+          <img src="https://images.rawpixel.com/image_social_portrait/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAxL3Jhd3BpeGVsb2ZmaWNlMTlfcGhvdG9fb2ZfYV9wcmluY2Vzc19kb2xsX2N1dGVfZnVsbF9ib2R5X2lzb2xhdF81NmI0MzMyNS0zZTRiLTQ3ZTctYTNiNS04ZTQ2MmIxNjI1YmZfMS5qcGc.jpg" alt="Princess Doll">
+          <h3>Princess Doll</h3>
+          <p>Beautiful doll with accessories.</p>
+          <p><strong>₱1,100.00</strong></p>
+          <button>Add to Cart</button>
+
+     </div>
+
+  </div>
+
+  <footer>
+      <p>© 2026 HappyToys Shop | All Rights Reserved</p>
+  </footer>
+
+  </body>
+  </html>
